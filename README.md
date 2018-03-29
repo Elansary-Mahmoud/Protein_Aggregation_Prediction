@@ -1,6 +1,8 @@
 ![alt text](https://media.glassdoor.com/sqll/621708/vib-squarelogo-1478797584897.png =100x20)
 ![alt text](http://newmansociety.files.wordpress.com/2011/01/sedes4.jpg =100x20)
 
+<img src="http://newmansociety.files.wordpress.com/2011/01/sedes4.jpg" width="200" height="200" />
+
 
 ## Prediction of protein aggregation inducing mutations
 
