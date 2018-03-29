@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="d:\microsoft visual studio 10.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="10.0">
+ <Targets>
+  <Target Name="C:\Users\Elansary\Documents\Visual Studio 2010\Projects\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe">
+   <Modules>
+    <Module Name="consoleapplication1.exe">
+     <Namespaces>
+      <Namespace Name="Project">
+       <Types>
+        <Type Name="Program" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#excute(System.Int32,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2012-07-17 08:03:18Z" FixCategory="DependsOnFix">
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\Elansary\Documents\Visual Studio 2010\Projects\ConsoleApplication1\ConsoleApplication1" File="Program.cs" Line="25">In method 'Program.excute(int, float, float, float, float, float, float, float)', object 'conn' is not disposed along all exception paths. Call System.IDisposable.Dispose on object 'conn' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\Elansary\Documents\Visual Studio 2010\Projects\ConsoleApplication1\ConsoleApplication1" File="Program.cs" Line="27">In method 'Program.excute(int, float, float, float, float, float, float, float)', call System.IDisposable.Dispose on object 'cmd' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Insert_Domain(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2012-07-17 08:03:18Z" FixCategory="DependsOnFix">
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\Elansary\Documents\Visual Studio 2010\Projects\ConsoleApplication1\ConsoleApplication1" File="Program.cs" Line="596">In method 'Program.Insert_Domain(string)', object 'connection' is not disposed along all exception paths. Call System.IDisposable.Dispose on object 'connection' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\Elansary\Documents\Visual Studio 2010\Projects\ConsoleApplication1\ConsoleApplication1" File="Program.cs" Line="622">In method 'Program.Insert_Domain(string)', call System.IDisposable.Dispose on object 'cmd' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\Elansary\Documents\Visual Studio 2010\Projects\ConsoleApplication1\ConsoleApplication1" File="Program.cs" Line="661">In method 'Program.Insert_Domain(string)', call System.IDisposable.Dispose on object 'cmd' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2012-07-17 08:03:18Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Elansary\Documents\Visual Studio 2010\Projects\ConsoleApplication1\ConsoleApplication1" File="Program.cs" Line="637">Object 'PFAM_file' can be disposed more than once in method 'Program.Insert_Domain(string)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 637</Issue>
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Elansary\Documents\Visual Studio 2010\Projects\ConsoleApplication1\ConsoleApplication1" File="Program.cs" Line="679">Object 'SMART_file' can be disposed more than once in method 'Program.Insert_Domain(string)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 679</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Insert_Foldx_SequenceDetail(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2012-07-17 08:03:18Z" FixCategory="DependsOnFix">
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\Elansary\Documents\Visual Studio 2010\Projects\ConsoleApplication1\ConsoleApplication1" File="Program.cs" Line="840">In method 'Program.Insert_Foldx_SequenceDetail(string)', object 'connection' is not disposed along all exception paths. Call System.IDisposable.Dispose on object 'connection' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2012-07-17 08:03:18Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Elansary\Documents\Visual Studio 2010\Projects\ConsoleApplication1\ConsoleApplication1" File="Program.cs" Line="1029">Object 'Mutants_file' can be disposed more than once in method 'Program.Insert_Foldx_SequenceDetail(string)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 1029</Issue>
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Elansary\Documents\Visual Studio 2010\Projects\ConsoleApplication1\ConsoleApplication1" File="Program.cs" Line="1021">Object 'Sequence_file' can be disposed more than once in method 'Program.Insert_Foldx_SequenceDetail(string)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 1021</Issue>
+            </Message>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2012-07-17 08:03:18Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\Elansary\Documents\Visual Studio 2010\Projects\ConsoleApplication1\ConsoleApplication1" File="Program.cs" Line="859">The query string passed to 'MySqlCommand.CommandText.set(string)' in 'Program.Insert_Foldx_SequenceDetail(string)' could contain the following variables 'Protein_ID_tmp_parts[1]', 'sequence.Orignial_AA', 'sequence.Position', 'sequence.Mutant'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Insert_Proteins()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2012-07-17 08:03:18Z" FixCategory="DependsOnFix">
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\Elansary\Documents\Visual Studio 2010\Projects\ConsoleApplication1\ConsoleApplication1" File="Program.cs" Line="50">In method 'Program.Insert_Proteins()', object 'connection' is not disposed along all exception paths. Call System.IDisposable.Dispose on object 'connection' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\Elansary\Documents\Visual Studio 2010\Projects\ConsoleApplication1\ConsoleApplication1" File="Program.cs" Line="104">In method 'Program.Insert_Proteins()', call System.IDisposable.Dispose on object 'cmd' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2012-07-17 08:03:18Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Elansary\Documents\Visual Studio 2010\Projects\ConsoleApplication1\ConsoleApplication1" File="Program.cs" Line="123">Object 'Global_file' can be disposed more than once in method 'Program.Insert_Proteins()'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 123</Issue>
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Elansary\Documents\Visual Studio 2010\Projects\ConsoleApplication1\ConsoleApplication1" File="Program.cs" Line="127">Object 'Protein_file' can be disposed more than once in method 'Program.Insert_Proteins()'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 127</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Insert_Sequences(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2012-07-17 08:03:18Z" FixCategory="DependsOnFix">
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\Elansary\Documents\Visual Studio 2010\Projects\ConsoleApplication1\ConsoleApplication1" File="Program.cs" Line="180">In method 'Program.Insert_Sequences(string)', object 'Global_file' is not disposed along all exception paths. Call System.IDisposable.Dispose on object 'Global_file' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\Elansary\Documents\Visual Studio 2010\Projects\ConsoleApplication1\ConsoleApplication1" File="Program.cs" Line="172">In method 'Program.Insert_Sequences(string)', call System.IDisposable.Dispose on object 'DA' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\Elansary\Documents\Visual Studio 2010\Projects\ConsoleApplication1\ConsoleApplication1" File="Program.cs" Line="542">In method 'Program.Insert_Sequences(string)', call System.IDisposable.Dispose on object 'cmd' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\Elansary\Documents\Visual Studio 2010\Projects\ConsoleApplication1\ConsoleApplication1" File="Program.cs" Line="164">In method 'Program.Insert_Sequences(string)', call System.IDisposable.Dispose on object 'connection' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\Elansary\Documents\Visual Studio 2010\Projects\ConsoleApplication1\ConsoleApplication1" File="Program.cs" Line="171">In method 'Program.Insert_Sequences(string)', call System.IDisposable.Dispose on object 'ds' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2012-07-17 08:03:18Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Elansary\Documents\Visual Studio 2010\Projects\ConsoleApplication1\ConsoleApplication1" File="Program.cs" Line="414">Object 'BLOSUM45_file' can be disposed more than once in method 'Program.Insert_Sequences(string)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 414</Issue>
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Elansary\Documents\Visual Studio 2010\Projects\ConsoleApplication1\ConsoleApplication1" File="Program.cs" Line="406">Object 'BLOSUM62_file' can be disposed more than once in method 'Program.Insert_Sequences(string)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 406</Issue>
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Elansary\Documents\Visual Studio 2010\Projects\ConsoleApplication1\ConsoleApplication1" File="Program.cs" Line="423">Object 'BLOSUM80_file' can be disposed more than once in method 'Program.Insert_Sequences(string)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 423</Issue>
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Elansary\Documents\Visual Studio 2010\Projects\ConsoleApplication1\ConsoleApplication1" File="Program.cs" Line="494">Object 'CONSURF_file' can be disposed more than once in method 'Program.Insert_Sequences(string)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 494</Issue>
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Elansary\Documents\Visual Studio 2010\Projects\ConsoleApplication1\ConsoleApplication1" File="Program.cs" Line="443">Object 'DA' can be disposed more than once in method 'Program.Insert_Sequences(string)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 443</Issue>
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Elansary\Documents\Visual Studio 2010\Projects\ConsoleApplication1\ConsoleApplication1" File="Program.cs" Line="581">Object 'Mutants_file' can be disposed more than once in method 'Program.Insert_Sequences(string)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 581</Issue>
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Elansary\Documents\Visual Studio 2010\Projects\ConsoleApplication1\ConsoleApplication1" File="Program.cs" Line="454">Object 'SIFT_file' can be disposed more than once in method 'Program.Insert_Sequences(string)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 454</Issue>
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Elansary\Documents\Visual Studio 2010\Projects\ConsoleApplication1\ConsoleApplication1" File="Program.cs" Line="540">Object 'Secondary_Structure_file' can be disposed more than once in method 'Program.Insert_Sequences(string)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 540</Issue>
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Elansary\Documents\Visual Studio 2010\Projects\ConsoleApplication1\ConsoleApplication1" File="Program.cs" Line="235">Object 'WT_file' can be disposed more than once in method 'Program.Insert_Sequences(string)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 235</Issue>
+            </Message>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2012-07-17 08:03:18Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\Elansary\Documents\Visual Studio 2010\Projects\ConsoleApplication1\ConsoleApplication1" File="Program.cs" Line="239">The query string passed to 'MySqlCommand.CommandText.set(string)' in 'Program.Insert_Sequences(string)' could contain the following variables 'WT_parts[0]', 'Protein_ID'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Insert_Stretch(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2012-07-17 08:03:18Z" FixCategory="DependsOnFix">
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\Elansary\Documents\Visual Studio 2010\Projects\ConsoleApplication1\ConsoleApplication1" File="Program.cs" Line="694">In method 'Program.Insert_Stretch(string)', object 'connection' is not disposed along all exception paths. Call System.IDisposable.Dispose on object 'connection' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2012-07-17 08:03:18Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Elansary\Documents\Visual Studio 2010\Projects\ConsoleApplication1\ConsoleApplication1" File="Program.cs" Line="814">Object 'Global_file' can be disposed more than once in method 'Program.Insert_Stretch(string)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 814</Issue>
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Elansary\Documents\Visual Studio 2010\Projects\ConsoleApplication1\ConsoleApplication1" File="Program.cs" Line="818">Object 'Mutants_file' can be disposed more than once in method 'Program.Insert_Stretch(string)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 818</Issue>
+            </Message>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2012-07-17 08:03:18Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\Elansary\Documents\Visual Studio 2010\Projects\ConsoleApplication1\ConsoleApplication1" File="Program.cs" Line="769">The query string passed to 'MySqlCommand.CommandText.set(string)' in 'Program.Insert_Stretch(string)' could contain the following variables 'Protein_ID_tmp_parts[1]', 'sequence.Orignial_AA', 'sequence.Position', 'sequence.Mutant'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\Elansary\Documents\Visual Studio 2010\Projects\ConsoleApplication1\ConsoleApplication1" File="Program.cs" Line="789">The query string passed to 'MySqlCommand.CommandText.set(string)' in 'Program.Insert_Stretch(string)' could contain the following variables 'sequence.Distance_To_Tango', 'stretch.Sequence_ID'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Main(System.String[])" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2012-07-17 08:03:18Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Elansary\Documents\Visual Studio 2010\Projects\ConsoleApplication1\ConsoleApplication1" File="Program.cs" Line="1073">Object 'Protein_file' can be disposed more than once in method 'Program.Main(string[])'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 1073</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000">
+   <Name>Dispose objects before losing scope</Name>
+   <Description>If a disposable object is not explicitly disposed before all references to it are out of scope, the object will be disposed at some indeterminate time when the garbage collector runs the finalizer of the object. Because an exceptional event might occur that will prevent the finalizer of the object from running, the object should be explicitly disposed instead.</Description>
+   <Resolution Name="ExceptionEdge">In method {0}, object {1} is not disposed along all exception paths. Call System.IDisposable.Dispose on object {1} before all references to it are out of scope.</Resolution>
+   <Resolution Name="NonExceptionEdge">In method {0}, call System.IDisposable.Dispose on object {1} before all references to it are out of scope.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182289(VS.100).aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202">
+   <Name>Do not dispose objects multiple times</Name>
+   <Description>A correctly implemented Dispose method can be called multiple times without throwing an exception. However, this is not guaranteed and to avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.</Description>
+   <Resolution Name="Default">Object {0} can be disposed more than once in method {1}. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 1073</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182334(VS.100).aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100">
+   <Name>Review SQL queries for security vulnerabilities</Name>
+   <Description>A SQL command string built from user input is vulnerable to SQL injection attacks. Microsoft SQL Server and other database servers support stored procedures and parameterized SQL queries, which reduce the risk of injection attacks.</Description>
+   <Resolution Name="WithNonLiterals">The query string passed to {0} in {1} could contain the following variables {2}. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182310(VS.100).aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="10.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>
