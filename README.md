@@ -1,5 +1,5 @@
-![alt text](http://www.vib.be/nl/biotechdag/PublishingImages/vib_tagline_pos_rgb.jpg)
-
+![alt text](https://media.glassdoor.com/sqll/621708/vib-squarelogo-1478797584897.png)
+![alt text](https://theo.kuleuven.be/en/prospective_students/StDamienCommunity/images-st-damien/combo-logo.jpg/image_preview)
 
 
 ## Prediction of protein aggregation inducing mutations
