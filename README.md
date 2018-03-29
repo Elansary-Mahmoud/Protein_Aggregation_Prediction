@@ -2,7 +2,7 @@
 
 Code used for the dissertation presented in fulfillment of the requirements for the degree of Master of Science in Bioinformatics
 
-Thesis for: Master of Science in BioinformaticsAdvisor: Prof. Dr. Ir. Yves Moreau, Prof. Dr. Ir. Joost Schymkowitz
+Advisor: Prof. Dr. Ir. Yves Moreau, Prof. Dr. Ir. Joost Schymkowitz
 
 Abstract:
 
