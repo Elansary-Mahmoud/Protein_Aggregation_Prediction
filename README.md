@@ -1,5 +1,5 @@
 ![alt text](https://media.glassdoor.com/sqll/621708/vib-squarelogo-1478797584897.png)
-![alt text](https://theo.kuleuven.be/en/prospective_students/StDamienCommunity/images-st-damien/combo-logo.jpg/image_preview)
+![alt text](http://newmansociety.files.wordpress.com/2011/01/sedes4.jpg)
 
 
 ## Prediction of protein aggregation inducing mutations
