@@ -1,3 +1,7 @@
+![alt text](http://www.vib.be/nl/biotechdag/PublishingImages/vib_tagline_pos_rgb.jpg)
+
+
+
 ## Prediction of protein aggregation inducing mutations
 
 Code used for the dissertation presented in fulfillment of the requirements for the degree of Master of Science in Bioinformatics
